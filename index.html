@@ -3,93 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/logo-iron-pulse.png" />
     <title>Iron Pulse</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
       <a href="index.html" class="logo-link">
-        <img
-          src="img/logo-escrita-iron-pulse.png"
-          alt="Logo escrita da academia Iron Pulse"
-        />
+        <img src="img/logo-escrita-iron-pulse.png" alt="Logo Iron Pulse" />
       </a>
 
       <nav>
         <ul>
           <li><a href="index.html">Início</a></li>
-          <li><a href="planos.html">Planos</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="contato.html">Contato</a></li>
+          <li><a href="#">Planos</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+      <!-- HERO -->
       <section class="hero">
-        <h1>Treine como nunca. Torne-se imparável.</h1>
+        <div class="container">
+          <h1>Treine como nunca. Torne-se imparável.</h1>
 
-        <p class="frase">
-          Na Iron Pulse, cada treino é pensado para levar você além dos seus
-          limites. Estrutura completa, energia intensa e resultados reais para
-          quem leva evolução a sério.
-        </p>
+          <p class="frase">
+            Na Iron Pulse, cada treino é pensado para levar você além dos seus
+            limites.
+          </p>
 
-        <p class="descricao">
-          A Iron Pulse é mais do que uma academia. É um espaço feito para quem
-          busca evolução de verdade. Com equipamentos modernos, treinos intensos
-          e acompanhamento profissional, ajudamos você a alcançar resultados
-          reais e consistentes. Aqui, cada treino conta.
-        </p>
-
-        <a href="planos.html" class="botao">Conheça os planos</a>
+          <a href="#" class="botao">Conheça os planos</a>
+        </div>
       </section>
 
-      <div class="cards-img">
-        <!-- MUSCULAÇÃO -->
-        <article class="card-produto card-musculacao">
-          <div class="overlay">
-            <h3>Musculação</h3>
-            <p>Treinos completos para força, resistência e evolução física.</p>
-            <span>R$ 99,00/mês</span>
-            <a href="planos.html">Ver detalhes</a>
-          </div>
-        </article>
+      <!-- SERVIÇOS -->
+      <section class="servicos">
+        <div class="container">
+          <h2>O treino que você procura, <span>aqui tem!</span></h2>
 
-        <!-- PERSONAL -->
-        <article class="card-produto card-personal">
-          <div class="overlay">
-            <h3>Personal Trainer</h3>
-            <p>Acompanhamento individual para acelerar seus resultados.</p>
-            <span>R$ 199,00/mês</span>
-            <a href="planos.html">Ver detalhes</a>
-          </div>
-        </article>
+          <div class="cards-img">
+            <article class="card-produto card-musculacao">
+              <div class="overlay">
+                <h3>Musculação</h3>
+                <p>Força, hipertrofia e evolução física.</p>
+                <span>R$ 99/mês</span>
+                <a href="#">Ver detalhes</a>
+              </div>
+            </article>
 
-        <!-- FUNCIONAL -->
-        <article class="card-produto card-funcional">
-          <div class="overlay">
-            <h3>Treino Funcional</h3>
-            <p>
-              Queime calorias e melhore seu condicionamento com intensidade.
-            </p>
-            <span>R$ 129,00/mês</span>
-            <a href="planos.html">Ver detalhes</a>
-          </div>
-        </article>
+            <article class="card-produto card-personal">
+              <div class="overlay">
+                <h3>Personal</h3>
+                <p>Treino individual com foco em resultado.</p>
+                <span>R$ 199/mês</span>
+                <a href="#">Ver detalhes</a>
+              </div>
+            </article>
 
-        <!-- AVALIAÇÃO -->
-        <article class="card-produto card-avaliacao">
-          <div class="overlay">
-            <h3>Avaliação Física</h3>
-            <p>Analise seu desempenho e acompanhe sua evolução com precisão.</p>
-            <span>Incluso nos planos</span>
-            <a href="planos.html">Ver detalhes</a>
+            <article class="card-produto card-funcional">
+              <div class="overlay">
+                <h3>Funcional</h3>
+                <p>Alta intensidade e condicionamento.</p>
+                <span>R$ 129/mês</span>
+                <a href="#">Ver detalhes</a>
+              </div>
+            </article>
+
+            <article class="card-produto card-avaliacao">
+              <div class="overlay">
+                <h3>Avaliação</h3>
+                <p>Acompanhe sua evolução com precisão.</p>
+                <span>Incluso</span>
+                <a href="#">Ver detalhes</a>
+              </div>
+            </article>
           </div>
-        </article>
-      </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
