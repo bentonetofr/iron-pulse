@@ -220,6 +220,362 @@ nav a:hover {
   font-family: "Aldrich", sans-serif;
 }
 
+.explicacoes {
+  padding: 80px 20px;
+  background-color: #080808;
+}
+
+.explicacoes h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-family: "Aldrich", sans-serif;
+}
+
+.explicacao-item {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+
+.explicacao-item h3 {
+  font-size: 22px;
+  color: #f6b800;
+  margin-bottom: 10px;
+  font-family: "Aldrich", sans-serif;
+}
+
+.explicacao-item p {
+  color: #c9c9c9;
+  line-height: 1.6;
+}
+
+.explicacoes {
+  padding: 100px 20px;
+  background-color: #080808;
+}
+
+.explicacoes h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 60px;
+  font-family: "Aldrich", sans-serif;
+}
+
+/* BLOCO PRINCIPAL */
+
+.explicacao-bloco {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+/* INVERTE LADO */
+
+.invertido {
+  flex-direction: row-reverse;
+}
+
+/* TEXTO */
+
+.texto {
+  flex: 1;
+}
+
+.texto h3 {
+  font-size: 28px;
+  color: #f6b800;
+  margin-bottom: 15px;
+  font-family: "Aldrich", sans-serif;
+}
+
+.texto p {
+  color: #c9c9c9;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+/* IMAGEM */
+
+.imagem {
+  flex: 1;
+}
+
+.imagem img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* TEXTOS */
+p {
+  font-family: "Electrolize", sans-serif;
+}
+
+/* BOTÕES */
+.botao,
+.overlay a {
+  font-family: "Electrolize", sans-serif;
+}
+
+.planos {
+  padding: 100px 20px;
+  background: #050505;
+}
+
+.planos h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+  font-family: "Aldrich", sans-serif;
+}
+
+.planos-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.plano-card {
+  background: #111111;
+  border: 1px solid rgba(246, 184, 0, 0.25);
+  border-radius: 18px;
+  padding: 35px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.plano-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary);
+}
+
+.plano-card h3 {
+  font-family: "Aldrich", sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.preco {
+  font-size: 38px;
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.preco span {
+  font-size: 16px;
+  color: var(--text-sec);
+}
+
+.plano-card ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.plano-card li {
+  color: var(--text-sec);
+  margin-bottom: 12px;
+  font-family: "Electrolize", sans-serif;
+}
+
+.botao-plano {
+  display: inline-block;
+  background: var(--primary);
+  color: #000;
+  padding: 12px 22px;
+  text-decoration: none;
+  font-family: "Electrolize", sans-serif;
+  font-weight: bold;
+}
+
+.destaque {
+  transform: scale(1.05);
+  border-color: var(--primary);
+  box-shadow: 0 0 25px rgba(246, 184, 0, 0.25);
+}
+
+@media (max-width: 900px) {
+  .planos-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .destaque {
+    transform: none;
+  }
+}
+
+.plano-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.plano-card {
+  cursor: pointer;
+}
+
+.planos {
+  padding: 110px 20px;
+  background:
+    radial-gradient(circle at center, rgba(246, 184, 0, 0.16), transparent 45%),
+    linear-gradient(180deg, #050505, #0d0d0d);
+}
+
+.planos h2 {
+  text-align: center;
+  font-size: 44px;
+  margin-bottom: 60px;
+  font-family: "Aldrich", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.planos-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.plano-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.plano-card {
+  min-height: 430px;
+  padding: 42px 34px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.06),
+      rgba(255, 255, 255, 0.01)
+    ),
+    #111111;
+  border: 1px solid rgba(246, 184, 0, 0.22);
+  border-radius: 24px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.35s;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+}
+
+.plano-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(246, 184, 0, 0.18),
+    transparent
+  );
+  transform: translateX(-100%);
+  transition: 0.6s;
+}
+
+.plano-card:hover::before {
+  transform: translateX(100%);
+}
+
+.plano-card:hover {
+  transform: translateY(-14px);
+  border-color: var(--primary);
+  box-shadow: 0 25px 65px rgba(246, 184, 0, 0.2);
+}
+
+.plano-card h3 {
+  font-size: 30px;
+  margin-bottom: 24px;
+  font-family: "Aldrich", sans-serif;
+  text-transform: uppercase;
+}
+
+.preco {
+  font-size: 46px;
+  color: var(--primary);
+  font-weight: 900;
+  margin-bottom: 30px;
+  font-family: "Electrolize", sans-serif;
+}
+
+.preco span {
+  font-size: 16px;
+  color: var(--text-sec);
+}
+
+.plano-card ul {
+  list-style: none;
+  margin-bottom: 34px;
+}
+
+.plano-card li {
+  color: var(--text-sec);
+  margin-bottom: 14px;
+  font-family: "Electrolize", sans-serif;
+}
+
+.plano-card li::before {
+  content: "✓ ";
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.botao-plano {
+  display: inline-block;
+  background: var(--primary);
+  color: #000000;
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-family: "Electrolize", sans-serif;
+  font-weight: 900;
+  transition: 0.3s;
+}
+
+.plano-card:hover .botao-plano {
+  background: #ffffff;
+  transform: scale(1.05);
+}
+
+.destaque {
+  border-color: var(--primary);
+  transform: scale(1.06);
+  box-shadow: 0 0 35px rgba(246, 184, 0, 0.3);
+}
+
+.destaque::after {
+  content: "MAIS ESCOLHIDO";
+  position: absolute;
+  top: 18px;
+  right: -38px;
+  background: var(--primary);
+  color: #000000;
+  padding: 8px 42px;
+  font-size: 12px;
+  font-family: "Electrolize", sans-serif;
+  font-weight: 900;
+  transform: rotate(35deg);
+}
+
+.destaque:hover {
+  transform: scale(1.06) translateY(-14px);
+}
+
+@media (max-width: 900px) {
+  .planos-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .destaque,
+  .destaque:hover {
+    transform: none;
+  }
+}
+
 /* RESPONSIVO */
 
 @media (max-width: 1000px) {

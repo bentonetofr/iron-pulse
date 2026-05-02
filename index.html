@@ -4,8 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iron Pulse</title>
+
+    <!-- FONTES -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo-escrita-iron-pulse.png" />
   </head>
 
   <body>
@@ -16,8 +27,8 @@
 
       <nav>
         <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="#">Planos</a></li>
+          <li><a href="#index.html">Início</a></li>
+          <li><a href="#planos">Planos</a></li>
           <li><a href="#">Sobre</a></li>
           <li><a href="#">Contato</a></li>
         </ul>
@@ -35,12 +46,12 @@
             limites.
           </p>
 
-          <a href="#" class="botao">Conheça os planos</a>
+          <a href="#explicacoes" class="botao">Conheça os planos</a>
         </div>
       </section>
 
       <!-- SERVIÇOS -->
-      <section class="servicos">
+      <section id="servicos" class="servicos">
         <div class="container">
           <h2>O treino que você procura, <span>aqui tem!</span></h2>
 
@@ -49,8 +60,7 @@
               <div class="overlay">
                 <h3>Musculação</h3>
                 <p>Força, hipertrofia e evolução física.</p>
-                <span>R$ 99/mês</span>
-                <a href="#">Ver detalhes</a>
+                <a href="#musculacao-descricao">Ver detalhes</a>
               </div>
             </article>
 
@@ -58,8 +68,7 @@
               <div class="overlay">
                 <h3>Personal</h3>
                 <p>Treino individual com foco em resultado.</p>
-                <span>R$ 199/mês</span>
-                <a href="#">Ver detalhes</a>
+                <a href="#personal-descricao">Ver detalhes</a>
               </div>
             </article>
 
@@ -67,8 +76,7 @@
               <div class="overlay">
                 <h3>Funcional</h3>
                 <p>Alta intensidade e condicionamento.</p>
-                <span>R$ 129/mês</span>
-                <a href="#">Ver detalhes</a>
+                <a href="#funcional-descricao">Ver detalhes</a>
               </div>
             </article>
 
@@ -76,10 +84,178 @@
               <div class="overlay">
                 <h3>Avaliação</h3>
                 <p>Acompanhe sua evolução com precisão.</p>
-                <span>Incluso</span>
-                <a href="#">Ver detalhes</a>
+                <a href="#avaliacao-descricao">Ver detalhes</a>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPLICAÇÕES -->
+      <section id="explicacoes" class="explicacoes">
+        <div class="container">
+          <h2>Entenda nossos treinos</h2>
+
+          <!-- MUSCULAÇÃO -->
+          <div id="musculacao-descricao" class="explicacao-bloco">
+            <div class="texto">
+              <h3>Musculação</h3>
+
+              <p>
+                A musculação é a base de qualquer transformação física sólida.
+                Aqui você desenvolve força, hipertrofia e resistência através de
+                treinos estruturados que trabalham cada grupo muscular de forma
+                específica e eficiente.
+              </p>
+
+              <p>
+                Utilizamos equipamentos como supino reto e inclinado, leg press,
+                cadeira extensora, puxadores, máquinas guiadas e pesos livres
+                para garantir segurança e desempenho máximo.
+              </p>
+
+              <p>
+                Com consistência e progressão de carga, você constrói um corpo
+                mais forte e melhora sua performance.
+              </p>
+            </div>
+
+            <div class="imagem">
+              <img
+                src="img/descricao-musculacao.jpg"
+                alt="Treino de musculação"
+              />
+            </div>
+          </div>
+
+          <!-- PERSONAL -->
+          <div id="personal-descricao" class="explicacao-bloco invertido">
+            <div class="texto">
+              <h3>Personal Trainer</h3>
+
+              <p>
+                O acompanhamento com personal trainer leva seu treino a outro
+                nível, com planejamento individualizado.
+              </p>
+
+              <p>
+                Cada exercício é ajustado em tempo real, garantindo segurança,
+                eficiência e evolução acelerada.
+              </p>
+
+              <p>
+                Utilizamos técnicas avançadas e equipamentos variados para
+                maximizar seus resultados.
+              </p>
+            </div>
+
+            <div class="imagem">
+              <img src="img/descricao-personal.jpg" alt="Personal trainer" />
+            </div>
+          </div>
+
+          <!-- FUNCIONAL -->
+          <div id="funcional-descricao" class="explicacao-bloco">
+            <div class="texto">
+              <h3>Treino Funcional</h3>
+
+              <p>
+                Treinos dinâmicos que trabalham o corpo inteiro, melhorando
+                mobilidade, resistência e coordenação.
+              </p>
+
+              <p>
+                Utilizamos equipamentos como TRX, cordas, caixas e exercícios
+                com peso corporal.
+              </p>
+
+              <p>Ideal para quem busca intensidade e alto gasto calórico.</p>
+            </div>
+
+            <div class="imagem">
+              <img src="img/descricao-funcional.jpg" alt="Treino funcional" />
+            </div>
+          </div>
+
+          <!-- AVALIAÇÃO -->
+          <div id="avaliacao-descricao" class="explicacao-bloco invertido">
+            <div class="texto">
+              <h3>Avaliação Física</h3>
+
+              <p>
+                A avaliação física analisa seu corpo e define estratégias para
+                evolução eficiente.
+              </p>
+
+              <p>
+                Utilizamos bioimpedância e testes físicos para medir seu
+                progresso.
+              </p>
+
+              <p>Com esses dados, seu treino é ajustado com precisão.</p>
+            </div>
+
+            <div class="imagem">
+              <img src="img/descricao-avaliacao.jpg" alt="Avaliação física" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="planos" class="planos">
+        <div class="container">
+          <h2>Escolha seu plano</h2>
+
+          <div class="planos-cards">
+            <!-- PLANO BÁSICO -->
+            <a href="contato.html" class="plano-card-link">
+              <article class="plano-card">
+                <h3>Básico</h3>
+                <p class="preco">R$ 99<span>/mês</span></p>
+
+                <ul>
+                  <li>Acesso à musculação</li>
+                  <li>Treino livre</li>
+                  <li>Horário comercial</li>
+                  <li>Área de cardio</li>
+                </ul>
+
+                <span class="botao-plano">Matricule-se</span>
+              </article>
+            </a>
+
+            <!-- PLANO PREMIUM -->
+            <a href="contato.html" class="plano-card-link">
+              <article class="plano-card destaque">
+                <h3>Premium</h3>
+                <p class="preco">R$ 149<span>/mês</span></p>
+
+                <ul>
+                  <li>Acesso completo à academia</li>
+                  <li>Musculação e funcional</li>
+                  <li>Avaliação física inclusa</li>
+                  <li>Horário livre</li>
+                </ul>
+
+                <span class="botao-plano">Matricule-se</span>
+              </article>
+            </a>
+
+            <!-- PLANO FAMÍLIA -->
+            <a href="contato.html" class="plano-card-link">
+              <article class="plano-card">
+                <h3>Família</h3>
+                <p class="preco">R$ 249<span>/mês</span></p>
+
+                <ul>
+                  <li>Plano para até 3 pessoas</li>
+                  <li>Acesso completo</li>
+                  <li>Avaliação física inclusa</li>
+                  <li>Desconto em personal</li>
+                </ul>
+
+                <span class="botao-plano">Matricule-se</span>
+              </article>
+            </a>
           </div>
         </div>
       </section>
